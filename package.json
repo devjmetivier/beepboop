@@ -4,7 +4,8 @@
   "description": "Basic Slack app using the Slapp library and Slack Events API",
   "scripts": {
     "watch": "nodemon server.js",
-    "test": "standard"
+    "test": "standard",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
