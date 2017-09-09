@@ -55,7 +55,7 @@ slapp.message(/^(thanks|thank you)/i, ['mention', 'direct_message'], (msg) => {
         'You bet',
         ':+1: Of course',
         'Anytime :sun_with_face: :full_moon_with_face:'
-    ])
+    ]);
 });
 
 // demonstrate returning an attachment...
@@ -72,7 +72,7 @@ slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
     })
 });
 
-slapp.message(/(save|store) (snippet|code)/gi, ['direct_mention', 'direct_message'], async (msg, text) => {
+slapp.message(/(save|store) (snippet|code)/gi, ['direct_mention', 'direct_message'], (msg, text) => {
     // let state = { requested: Date.now() };
     let state = {};
     msg
